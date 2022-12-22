@@ -1,0 +1,65 @@
+:root {
+}
+
+body {
+  font-family: cursive;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  background-color: #000;
+  color: #fff;
+
+  max-width: 60rem;
+}
+
+.heading {
+  font-weight: 700;
+}
+
+/* .budget__info {
+  font-size: 2rem;
+} */
+
+input {
+  padding: 0.5rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.reveal-item {
+  display: block;
+}
+
+.reveal-red {
+  color: red;
+}
+
+.reveal-green {
+  color: green;
+}
+
+.reveal-white {
+  color: #fff;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(1);
+}
