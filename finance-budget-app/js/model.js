@@ -4,11 +4,11 @@ class Budget {
     this.expenseInformation = document.querySelector(".expense");
     this.formBudget = document.querySelector(".form__budget");
     this.inputBudget = document.querySelector(".input-budget");
-    this.financeBudgetAmount = document.querySelector(".finance__budget");
-    this.financeExpenseAmount = document.querySelector(".finance__expenses");
-    this.balance = document.querySelector(".balance");
+    this.financeBudgetAmount = document.querySelector(".finance__amount");
+    this.financeExpenseAmount = document.querySelector(".finance__expense");
     this.financeBalanceAmount = document.querySelector(".finance__balance");
-    this.formExpense = document.querySelector(".form__expense");
+    this.balance = document.querySelector(".balance");
+    this.formExpense = document.querySelector(".expense__form");
     this.inputExpense = document.querySelector(".input-expense");
     this.inputAmount = document.querySelector(".input-amount");
     this.listExpense = document.querySelector(".list__expense");
@@ -163,7 +163,7 @@ class Budget {
 // Implement the event listeners
 function init() {
   const formBudget = document.querySelector(".form__budget");
-  const formExpense = document.querySelector(".form__expense");
+  const formExpense = document.querySelector(".expense__form");
   const listExpense = document.querySelector(".list__expense");
 
   const budget = new Budget();
@@ -189,7 +189,7 @@ function init() {
     }
   });
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  init();
-});
+init();
+// document.addEventListener("DOMContentLoaded", function () {
+//   init();
+// });
