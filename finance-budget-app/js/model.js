@@ -10,9 +10,6 @@ class Budget {
     this.balance = document.querySelector(".balance");
     this.formExpense = document.querySelector(".expense__form");
     this.inputAmount = document.querySelector(".input-amount");
-    this.listExpense = document.querySelector(".list__expense");
-    this.listItem = [];
-    this.item = 0;
   }
 
   // Submit the budget on command
