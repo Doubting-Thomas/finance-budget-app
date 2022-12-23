@@ -9,7 +9,6 @@ class Budget {
     this.financeBalanceAmount = document.querySelector(".finance__balance");
     this.balance = document.querySelector(".balance");
     this.formExpense = document.querySelector(".expense__form");
-    //this.inputExpense = document.querySelector(".input-expense");
     this.inputAmount = document.querySelector(".input-amount");
     this.listExpense = document.querySelector(".list__expense");
     this.listItem = [];
@@ -55,7 +54,6 @@ class Budget {
 
   // Submit expenses
   submitFormExpense() {
-    //const valueExpense = this.inputExpense.value;
     const valueAmount = this.inputAmount.value;
 
     if (valueAmount === "" || valueAmount < 0) {
@@ -70,58 +68,15 @@ class Budget {
       this.displayBalance();
       this.totalExpense();
     }
-    // } else {
-    //   this.financeExpenseAmount.textContent = valueAmount;
-    //   this.inputExpense.value = "";
-    //   this.inputAmount.value = "";
-    // this.displayBalance();
-    //   let amount = parseInt(valueAmount);
-    //   this.inputExpense.value = "";
-    //   this.inputAmount.value = "";
-
-    //   let expense = {
-    //     id: this.item,
-    //     title: valueExpense,
-    //     amount: amount,
-    //   };
-
-    //   this.item++;
-    //   this.listItem.push(expense);
-    //   this.addExpense(expense);
-    // this.displayBalance();
-    // }
   }
 
   // Total expenses
   totalExpense() {
-    // let total = 0;
-
-    // if (this.listItem.length > 0) {
-    //   total = this.listItem.reduce(function (acc, cur) {
-    //     acc += cur.amount;
-    //     return acc;
-    //   }, 0);
-    // }
-    // this.financeExpenseAmount.textContent = total;
-    // return total;
     let inputValue = this.inputAmount.value;
-    // if (inputValue === "" || inputValue < 0) {
-    //   this.expenseInformation.classList.add("reveal-item");
-    //   this.expenseInformation.innerHTML = `<p>Input must not be empty and less than zero.</p>`;
-
-    //   // Make 'this' point to the Budget class
-    //   const timeout = this;
-    //   setTimeout(function () {
-    //     timeout.expenseInformation.remove("reveal-item");
-    //   }, 3000);
-    // }  {
     if (inputValue > 0) {
       this.financeExpenseAmount.textContent = inputValue;
       this.inputAmount.value = "";
-      // return inputValue;
     }
-
-    // this.displayBalance();
     return inputValue;
   }
 }
@@ -130,8 +85,6 @@ class Budget {
 function init() {
   const formBudget = document.querySelector(".form__budget");
   const formExpense = document.querySelector(".expense__form");
-  // Grey out the below
-  const listExpense = document.querySelector(".list__expense");
 
   const budget = new Budget();
 
@@ -148,6 +101,3 @@ function init() {
   });
 }
 init();
-// document.addEventListener("DOMContentLoaded", function () {
-//   init();
-// });
