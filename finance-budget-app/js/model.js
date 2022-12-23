@@ -40,6 +40,7 @@ class Budget {
     const totalBalance =
       parseInt(this.financeBudgetAmount.textContent) - valueExpense;
     this.financeBalanceAmount.textContent = totalBalance;
+
     if (totalBalance < 0) {
       this.balance.classList.remove("reveal-green", "reveal-white");
       this.balance.classList.add("reveal-red");
