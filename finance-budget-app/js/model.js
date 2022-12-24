@@ -55,7 +55,7 @@ class Budget {
     const inputValue = this.inputBudget.value;
     if (inputValue === "" || inputValue < 0) {
       this.budgetInformation.classList.add("reveal-item");
-      this.budgetInformation.innerHTML = `<p>Input must not be empty and less than zero.</p>`;
+      this.budgetInformation.innerHTML = `<p>Input must not be empty or less than zero.</p>`;
 
       // Make 'this' point to the Budget class
       const timeout = this;
@@ -75,17 +75,6 @@ class Budget {
     const totalBalance =
       parseInt(this.financeBudgetAmount.textContent) - valueExpense;
     this.financeBalanceAmount.textContent = totalBalance;
-
-    if (totalBalance < 0) {
-      this.balance.classList.remove("reveal-green", "reveal-white");
-      this.balance.classList.add("reveal-red");
-    } else if (totalBalance > 0) {
-      this.balance.classList.remove("reveal-red", "reveal-white");
-      this.balance.classList.add("reveal-green");
-    } else if (totalBalance === 0) {
-      this.balance.classList.remove("reveal-red", "reveal-green");
-      this.balance.classList.add("reveal-white");
-    }
   }
 
   // Submit expenses
@@ -95,6 +84,7 @@ class Budget {
     if (valueAmount === "" || valueAmount < 0) {
       this.expenseInformation.classList.add("reveal-item");
       this.expenseInformation.innerHTML = `<p>Input values cannot be empty or less than zero.`;
+      this.expenseInformation.style.color = "red";
 
       const timeout = this;
       setTimeout(function () {
