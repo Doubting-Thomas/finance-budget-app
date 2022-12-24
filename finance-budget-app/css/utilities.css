@@ -1,7 +1,11 @@
 .u-margin-bottom-sm {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .u-margin-bottom-md {
   margin-bottom: 5rem;
+}
+
+.u-text-align-center {
+  text-align: center;
 }

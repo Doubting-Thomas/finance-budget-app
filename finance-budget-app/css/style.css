@@ -11,14 +11,25 @@ body {
   line-height: 1.6;
   background-color: var(--color-primary);
   color: var(--color-secondary);
-  text-align: center;
+  /* text-align: center; */
 
   max-width: 60rem;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 .container {
   opacity: 0;
 }
+
+/* .budget__container {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
 
 .btn {
   padding: 0.5rem 1rem;

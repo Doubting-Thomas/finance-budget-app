@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/utilities.css" rel="stylesheet" />
+    <link href="css/queries.css" rel="stylesheet">
+
     <script type="module" src="js/model.js"></script>
+
     <title>Finance Budget App</title>
   </head>
   <body>
@@ -30,43 +33,47 @@
       </div>
     </header>
 
-    <section class="cta u-margin-bottom-sm">
+    <section class="cta u-margin-bottom-sm u-text-align-center">
       <h6 class="cta__text">Please log in to get started.</h6>
     </section>
 
     <main class="container">
-      <section class="budget u-margin-bottom-sm">
+      <section class="budget u-margin-bottom-sm u-text-align-center">
         <h1 class="budget__heading heading">Budget App</h1>
       </section>
 
-      <section class="form u-margin-bottom-sm">
-        <form class="form__budget">
-          <h5 class="form__cta">Please input your budget</h5>
+      <section class="budget__container">
+        <div class="form u-margin-bottom-sm">
+          <form class="form__budget">
+            <h5 class="form__cta">Please input your budget</h5>
 
-          <h6 class="budget__info heading">Budget Information</h6>
-          <div class="form__group">
-            <input type="number" class="form__control input-budget" />
-          </div>
+            <h6 class="budget__info heading">Budget Information</h6>
+            <div class="form__group u-margin-bottom-sm">
+              <input type="number" class="form__control input-budget" />
+            </div>
 
-          <button type="submit" class="btn form__btn">Calculate Budget</button>
-        </form>
-      </section>
+            <button type="submit" class="btn form__btn">
+              Calculate Budget
+            </button>
+          </form>
+        </div>
 
-      <section class="expense u-margin-bottom-sm">
-        <form class="expense__form">
-          <h5 class="expense__info heading">Please enter expense amount</h5>
+        <section class="expense u-margin-bottom-sm">
+          <div class="expense__form">
+            <h5 class="expense__info heading">Please enter expense amount</h5>
 
-          <h6 class="heading">Expense Information</h6>
+            <h6 class="heading">Expense Information</h6>
 
-          <div class="form__group">
-            <input
-              type="number"
-              class="form__control input-expense input-amount"
-            />
-          </div>
+            <div class="form__group u-margin-bottom-sm">
+              <input
+                type="number"
+                class="form__control input-expense input-amount"
+              />
+            </div>
 
-          <button type="submit" class="btn form__btn">Add expense</button>
-        </form>
+            <button type="submit" class="btn form__btn">Add expense</button>
+          </form>
+        </div>
       </section>
 
       <section class="finance u-margin-bottom-sm">

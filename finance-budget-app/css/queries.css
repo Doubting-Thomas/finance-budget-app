@@ -1,0 +1,11 @@
+@media (min-width: 56.25em) {
+  body {
+    color: red;
+  }
+  /* .budget__container {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } */
+}
