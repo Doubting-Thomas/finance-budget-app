@@ -27,7 +27,7 @@ btnLogin.addEventListener("click", function (e) {
   if (currentUserAccount?.password === Number(pinLogin.value)) {
     userDisplay.style.opacity = 100;
 
-    messageLogin.textContent = `Welcome, ${currentUserAccount.username}`;
+    messageLogin.textContent = `Welcome, ${currentUserAccount.username}!`;
 
     // Clear input fields
     userLogin.value = "";
