@@ -11,21 +11,17 @@ const firstAccount = {
   password: 5467,
 };
 
-const secondAccount = {
-  username: "Mary Potter",
-  password: 3421,
-};
-
-const userAccounts = [firstAccount, secondAccount];
+const userAccounts = [firstAccount];
 
 btnLogin.addEventListener("click", function (e) {
   e.preventDefault();
+
   let currentUserAccount;
+
   // Find the username
   currentUserAccount = userAccounts.find(function (acc) {
-    return acc.username === "John Doe";
+    return acc.username;
   });
-  console.log(currentUserAccount);
 
   // Check for the PIN
   if (currentUserAccount?.password === Number(pinLogin.value)) {
@@ -40,31 +36,8 @@ btnLogin.addEventListener("click", function (e) {
   }
 });
 
-// // Find the username
-// currentUserAccount = userAccounts.find(function (cur) {
-//   cur.username === this.userLogin.value;
-// });
-
-// // Check for the PIN
-// if (currentUserAccount?.pin === Number(this.pinLogin.value)) {
-//   this.userDisplay.style.opacity = 100;
-
-//   this.messageLogin.textContent = `Welcome, ${
-//     currentUserAccount.username.split("")[0]
-//   }`;
-
-//   // Clear input fields
-//   this.userLogin.value = this.pinLogin.value = "";
-
 class Budget {
   constructor() {
-    // this.userLogin = document.querySelector(".login__user");
-    // this.pinLogin = document.querySelector(".login__pin");
-    // this.btnLogin = document.querySelector(".btn--login");
-    // this.messageLogin = document.querySelector(".cta__text");
-    // this.userDisplay = document.querySelector(".container");
-    // this.formLogin = document.querySelector(".login__input");
-
     this.budgetInformation = document.querySelector(".budget__info");
     this.expenseInformation = document.querySelector(".expense__info");
     this.formBudget = document.querySelector(".form__budget");
@@ -76,40 +49,6 @@ class Budget {
     this.formExpense = document.querySelector(".expense__form");
     this.inputAmount = document.querySelector(".input-amount");
   }
-
-  // Login functionality
-  // loginProcess() {
-  //   let currentUserAccount;
-
-  //   const firstAccount = {
-  //     username: "John Doe",
-  //     password: 5467,
-  //   };
-
-  //   const secondAccount = {
-  //     username: "Mary Potter",
-  //     password: 3421,
-  //   };
-
-  //   const userAccounts = [firstAccount, secondAccount];
-
-  //   // Find the username
-  //   currentUserAccount = userAccounts.find(function (cur) {
-  //     cur.username === this.userLogin.value;
-  //   });
-
-  //   // Check for the PIN
-  //   if (currentUserAccount?.pin === Number(this.pinLogin.value)) {
-  //     this.userDisplay.style.opacity = 100;
-
-  //     this.messageLogin.textContent = `Welcome, ${
-  //       currentUserAccount.username.split("")[0]
-  //     }`;
-
-  //     // Clear input fields
-  //     this.userLogin.value = this.pinLogin.value = "";
-  //   }
-  // }
 
   // Submit the budget on command
   submitFormBudget() {
@@ -182,15 +121,8 @@ class Budget {
 function init() {
   const formBudget = document.querySelector(".form__budget");
   const formExpense = document.querySelector(".expense__form");
-  const formLogin = document.querySelector(".login__input");
 
   const budget = new Budget();
-
-  // formLogin.addEventListener("submit", function (e) {
-  //   e.preventDefault();
-  //   budget.loginProcess();
-  // });
-
   // Submit budget form
   formBudget.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -203,30 +135,3 @@ function init() {
     budget.submitFormExpense();
   });
 }
-
-// const btnLogin = document.querySelector(".btn--login");
-// const formLogin = document.querySelector(".login__input");
-
-// function loginUser() {
-//   const budget = new Budget();
-//   budget.loginProcess();
-// }
-
-// function formLoginProcess() {
-//   const budget = new Budget();
-//   budget.loginProcess();
-// }
-
-// formLogin.addEventListener("submit", function (e) {
-//   e.preventDefault();
-//   formLoginProcess();
-// });
-
-// btnLogin.addEventListener("click", function (e) {
-//   e.preventDefault();
-//   loginUser();
-// });
-// function loginUser() {
-//   const budget = new Budget();
-//   budget.loginProcess();
-// }
