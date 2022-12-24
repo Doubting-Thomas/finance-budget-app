@@ -13,6 +13,39 @@ body {
   max-width: 60rem;
 }
 
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(1);
+}
+
+.login {
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+.btn--login {
+  /* display: flex; */
+  margin-top: 1rem;
+  font-size: 1rem;
+  float: right;
+}
+
 .heading {
   font-weight: 700;
 }
@@ -41,7 +74,7 @@ input:focus {
   color: #fff;
 }
 
-.btn {
+/* .btn {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   font-family: inherit;
@@ -59,4 +92,4 @@ input:focus {
 
 .btn:active {
   transform: scale(1);
-}
+} */
