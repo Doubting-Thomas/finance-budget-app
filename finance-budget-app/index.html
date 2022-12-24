@@ -10,9 +10,27 @@
     <title>Finance Budget App</title>
   </head>
   <body>
-    <section class="login u-margin-bottom-md">
-      <btn class="btn btn--login">Log In</btn>
-    </section>
+    <header class="login">
+      <div class="login__form">
+        <form class="login__input">
+          <input
+            type="text"
+            class="form__control login__user"
+            placeholder="Username"
+          />
+
+          <input
+            type="text"
+            class="form__control login__pin"
+            placeholder="Password"
+          />
+        </form>
+      </div>
+
+      <div class="login__btn">
+        <btn class="btn btn--login">Log In</btn>
+      </div>
+    </header>
 
     <section class="budget u-margin-bottom-sm">
       <h1 class="budget__heading heading">Budget App</h1>

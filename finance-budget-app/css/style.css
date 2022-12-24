@@ -37,13 +37,18 @@ body {
 .login {
   padding-bottom: 1rem;
   padding-right: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .btn--login {
   /* display: flex; */
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   font-size: 1rem;
-  float: right;
+  /* float: right; */
 }
 
 .heading {
