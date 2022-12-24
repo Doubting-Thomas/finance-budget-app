@@ -10,7 +10,7 @@
     <title>Finance Budget App</title>
   </head>
   <body>
-    <header class="login">
+    <header class="login u-margin-bottom-sm">
       <div class="login__form">
         <form class="login__input">
           <input
@@ -24,69 +24,77 @@
             class="form__control login__pin"
             placeholder="Password"
           />
+
+          <button type="submit" class="btn btn--login">Log In</button>
         </form>
       </div>
 
-      <div class="login__btn">
+      <!-- <div class="login__btn">
         <btn class="btn btn--login">Log In</btn>
-      </div>
+      </div> -->
     </header>
 
-    <section class="budget u-margin-bottom-sm">
-      <h1 class="budget__heading heading">Budget App</h1>
+    <section class="cta u-margin-bottom-sm">
+      <h6 class="cta__text">Please log in to get started.</h6>
     </section>
 
-    <section class="form u-margin-bottom-sm">
-      <form class="form__budget">
-        <h5 class="form__cta">Please input your budget</h5>
+    <main class="container">
+      <section class="budget u-margin-bottom-sm">
+        <h1 class="budget__heading heading">Budget App</h1>
+      </section>
 
-        <h4 class="budget__info heading">Budget Information</h4>
-        <div class="form__group">
-          <input type="number" class="form__control input-budget" />
+      <section class="form u-margin-bottom-sm">
+        <form class="form__budget">
+          <h5 class="form__cta">Please input your budget</h5>
+
+          <h4 class="budget__info heading">Budget Information</h4>
+          <div class="form__group">
+            <input type="number" class="form__control input-budget" />
+          </div>
+
+          <button type="submit" class="btn form__btn">Calculate Budget</button>
+        </form>
+      </section>
+
+      <section class="expense u-margin-bottom-sm">
+        <form class="expense__form">
+          <h5 class="expense__info heading">Please enter expense amount</h5>
+
+          <h4 class="heading">Expense Information</h4>
+
+          <div class="form__group">
+            <input
+              type="number"
+              class="form__control input-expense input-amount"
+            />
+          </div>
+
+          <button type="submit" class="btn form__btn">Add expense</button>
+        </form>
+      </section>
+
+      <section class="finance u-margin-bottom-sm">
+        <div class="finance__info">
+          <h4 class="finance__title">Budget</h4>
+          <h4 class="finance-amount">
+            <span>$</span><span class="finance__amount">0</span>
+          </h4>
         </div>
 
-        <button type="submit" class="btn form__btn">Calculate Budget</button>
-      </form>
-    </section>
-
-    <section class="expense u-margin-bottom-sm">
-      <form class="expense__form">
-        <h5 class="expense__info heading">Please enter expense amount</h5>
-
-        <h4 class="heading">Expense Information</h4>
-
-        <div class="form__group">
-          <input
-            type="number"
-            class="form__control input-expense input-amount"
-          />
+        <div class="finance__info">
+          <h4 class="finance__title">Expenses</h4>
+          <h4 class="finance-expense">
+            <span>$</span><span class="finance__expense">0</span>
+          </h4>
         </div>
 
-        <button type="submit" class="btn form__btn">Add expense</button>
-      </form>
-    </section>
-
-    <section class="finance u-margin-bottom-sm">
-      <div class="finance__info">
-        <h4 class="finance__title">Budget</h4>
-        <h4 class="finance-amount">
-          <span>$</span><span class="finance__amount">0</span>
-        </h4>
-      </div>
-
-      <div class="finance__info">
-        <h4 class="finance__title">Expenses</h4>
-        <h4 class="finance-expense">
-          <span>$</span><span class="finance__expense">0</span>
-        </h4>
-      </div>
-
-      <div class="finance__info">
-        <h4 class="finance__title">Balance</h4>
-        <h4 class="finance-balance">
-          <span>$</span><span class="finance__balance">0</span>
-        </h4>
-      </div>
-    </section>
+        <div class="finance__info">
+          <h4 class="finance__title">Balance</h4>
+          <h4 class="finance-balance">
+            <span>$</span><span class="finance__balance">0</span>
+          </h4>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
