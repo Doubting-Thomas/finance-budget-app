@@ -26,7 +26,7 @@ btnLogin.addEventListener("click", function (e) {
   });
 
   // Check for the PIN
-  if (currentUserAccount?.password === Number(pinLogin.value)) {
+  if (currentUserAccount?.password === +pinLogin.value) {
     userDisplay.style.opacity = 100;
 
     messageLogin.textContent = `Welcome, ${currentUserAccount.username}!`;
@@ -64,6 +64,7 @@ class Budget {
     if (inputValue === "" || inputValue < 0) {
       this.budgetInformation.classList.add("reveal-item");
       this.budgetInformation.innerHTML = `<p>Input must not be empty or less than zero.</p>`;
+      this.budgetInformation.style.color = "#f9035e";
 
       // Make 'this' point to the Budget class
       const timeout = this;
@@ -71,6 +72,17 @@ class Budget {
         timeout.budgetInformation.remove("reveal-item");
       }, 3000);
     } else {
+      this.budgetInformation.innerHTML = `<p>Successfully added!</p>`;
+      this.budgetInformation.style.color = "#30c67c";
+
+      const timeout = this;
+
+      setTimeout(function () {
+        setTimeout(function () {
+          timeout.budgetInformation.remove("reveal-item");
+        }, 3000);
+      });
+
       this.financeBudgetAmount.textContent = inputValue;
       this.inputBudget.value = "";
       this.displayBalance();
@@ -91,14 +103,25 @@ class Budget {
 
     if (valueAmount === "" || valueAmount < 0) {
       this.expenseInformation.classList.add("reveal-item");
-      this.expenseInformation.innerHTML = `<p>Input values cannot be empty or less than zero.`;
-      this.expenseInformation.style.color = "red";
+      this.expenseInformation.innerHTML = `<p>Input values cannot be empty or less than zero.</p>`;
+      this.expenseInformation.style.color = "#f9035e";
 
       const timeout = this;
       setTimeout(function () {
-        timeout.expenseInformation.classList.remove("reveal-item");
+        timeout.expenseInformation.remove("reveal-item");
       }, 3000);
     } else {
+      this.expenseInformation.innerHTML = `<p>Successfully added!</p>`;
+      this.expenseInformation.style.color = "#30c67c";
+
+      const timeout = this;
+
+      setTimeout(function () {
+        setTimeout(function () {
+          timeout.expenseInformation.remove("reveal-item");
+        }, 3000);
+      });
+
       this.displayBalance();
       this.totalExpense();
     }
