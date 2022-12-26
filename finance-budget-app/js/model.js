@@ -42,6 +42,14 @@ btnLogout.addEventListener("click", function (e) {
   e.preventDefault();
   userDisplay.style.opacity = 0;
   logoutText.textContent = "Please visit us again to get started.";
+
+  // Target values from the class
+  const budget = new Budget();
+  const inputBudget = budget.inputBudget;
+  const inputExpenses = budget.inputAmount;
+
+  inputBudget.value = "";
+  inputExpenses.value = "";
 });
 
 class Budget {
