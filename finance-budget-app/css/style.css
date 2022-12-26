@@ -13,6 +13,7 @@ body {
   color: var(--color-secondary);
 
   max-width: 60rem;
+  text-align: center;
 }
 
 html {

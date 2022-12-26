@@ -1,9 +1,14 @@
 @media (min-width: 56.25em) {
+  body {
+    max-width: 90rem;
+  }
+
   .budget__container,
   .finance__info {
     padding: 1.5rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5rem;
   }
 }
