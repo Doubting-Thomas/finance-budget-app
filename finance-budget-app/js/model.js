@@ -5,6 +5,7 @@ const pinLogin = document.querySelector(".login__pin");
 const messageLogin = document.querySelector(".cta__text");
 const userDisplay = document.querySelector(".container");
 const formLogin = document.querySelector(".login__input");
+const logoutText = document.querySelector(".cta__text");
 
 // Account details for login
 const firstAccount = {
@@ -37,9 +38,10 @@ btnLogin.addEventListener("click", function (e) {
   }
 });
 
-btnLogout.addEventListener("click", function () {
-  logoutText.textContent = "";
-  userDisplay.style.opacity = "";
+btnLogout.addEventListener("click", function (e) {
+  e.preventDefault();
+  userDisplay.style.opacity = 0;
+  logoutText.textContent = "Please visit us again to get started.";
 });
 
 class Budget {
