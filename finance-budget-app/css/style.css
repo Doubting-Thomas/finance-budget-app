@@ -45,13 +45,17 @@ html {
   transform: scale(1);
 }
 
-.login {
-  padding: 0 1rem 1rem 0;
+.login__form {
+  padding: 1rem 10rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+}
+
+.login__pin {
+  margin-right: 3rem;
 }
 
 .heading {

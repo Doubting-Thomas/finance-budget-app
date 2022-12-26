@@ -1,4 +1,5 @@
 const btnLogin = document.querySelector(".btn--login");
+const btnLogout = document.querySelector(".btn--logout");
 const userLogin = document.querySelector(".login__user");
 const pinLogin = document.querySelector(".login__pin");
 const messageLogin = document.querySelector(".cta__text");
@@ -34,6 +35,11 @@ btnLogin.addEventListener("click", function (e) {
     pinLogin.value = "";
     init();
   }
+});
+
+btnLogout.addEventListener("click", function () {
+  logoutText.textContent = "";
+  userDisplay.style.opacity = "";
 });
 
 class Budget {
