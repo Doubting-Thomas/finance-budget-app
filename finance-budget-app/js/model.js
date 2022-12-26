@@ -1,12 +1,3 @@
-// const btnLogin = document.querySelector(".btn--login");
-// const btnLogout = document.querySelector(".btn--logout");
-// const userLogin = document.querySelector(".login__user");
-// const pinLogin = document.querySelector(".login__pin");
-// const messageLogin = document.querySelector(".cta__text");
-// const userDisplay = document.querySelector(".container");
-// const formLogin = document.querySelector(".login__input");
-// const logoutText = document.querySelector(".cta__text");
-
 import {
   btnLogin,
   btnLogout,
