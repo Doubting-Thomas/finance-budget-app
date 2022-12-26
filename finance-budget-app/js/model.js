@@ -5,7 +5,6 @@ import {
   pinLogin,
   messageLogin,
   userDisplay,
-  formLogin,
   logoutText,
 } from "./controller.js";
 
