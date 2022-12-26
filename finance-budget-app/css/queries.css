@@ -1,6 +1,7 @@
 @media (min-width: 56.25em) {
   body {
     max-width: 90rem;
+    font-size: 2rem;
   }
 
   .budget__container,
