@@ -26,7 +26,7 @@ btnLogin.addEventListener("click", function (e) {
     return acc.username;
   });
 
-  // Check for the PIN
+  // Check for the username and PIN
   if (currentUserAccount?.password === +pinLogin.value) {
     userDisplay.style.opacity = 100;
 
