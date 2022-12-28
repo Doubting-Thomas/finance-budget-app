@@ -75,3 +75,7 @@ input:focus {
 .reveal-item {
   display: block;
 }
+
+.hidden {
+  display: none;
+}
