@@ -36,6 +36,10 @@ btnLogin.addEventListener("click", function (e) {
     userLogin.value = "";
     pinLogin.value = "";
     init();
+  } else {
+    userLogin.value = "";
+    pinLogin.value = "";
+    messageLogin.textContent = "Wrong username or password.";
   }
 });
 
