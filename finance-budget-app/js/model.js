@@ -38,8 +38,6 @@ btnLogin.addEventListener("click", function (e) {
     btnLogout.classList.remove("hidden");
     init();
   } else {
-    userLogin.value = "";
-    pinLogin.value = "";
     messageLogin.textContent = "Wrong username or password.";
   }
 });
@@ -48,6 +46,7 @@ btnLogout.addEventListener("click", function (e) {
   e.preventDefault();
   userDisplay.style.opacity = 0;
   logoutText.textContent = "Please visit us again to get started.";
+  btnLogout.classList.add("hidden");
 
   // Target values from the class
   const budget = new Budget();
