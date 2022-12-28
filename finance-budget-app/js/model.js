@@ -6,7 +6,7 @@ import {
   messageLogin,
   userDisplay,
   logoutText,
-} from "./controller.js";
+} from "./config.js";
 
 // Account details for login
 const firstAccount = {
