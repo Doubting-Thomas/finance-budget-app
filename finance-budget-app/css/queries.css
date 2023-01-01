@@ -4,6 +4,11 @@
     font-size: 2rem;
   }
 
+  .login__input {
+    display: flex;
+    align-items: center;
+  }
+
   .budget__container,
   .finance__info {
     padding: 1.5rem;

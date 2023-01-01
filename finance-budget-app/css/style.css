@@ -48,14 +48,20 @@ html {
 .login__form {
   padding: 1rem 10rem;
 
+  gap: 2rem;
+}
+
+.login__input {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+
   gap: 2rem;
 }
 
 .login__pin {
-  margin-right: 3rem;
+  /* margin-right: 3rem; */
 }
 
 .heading {
