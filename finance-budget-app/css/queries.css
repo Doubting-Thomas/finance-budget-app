@@ -23,4 +23,10 @@
   body {
     max-width: 120rem;
   }
+
+  .login__input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
