@@ -6,6 +6,7 @@
 
   .login__input {
     display: flex;
+    flex-direction: row;
     align-items: center;
   }
 
