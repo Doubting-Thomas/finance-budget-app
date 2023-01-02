@@ -32,7 +32,6 @@ btnLogin.addEventListener("click", function (e) {
 
     messageLogin.textContent = `Welcome, ${currentUserAccount.username}!`;
 
-    // Clear input fields
     userLogin.value = "";
     pinLogin.value = "";
     btnLogout.classList.remove("hidden");
