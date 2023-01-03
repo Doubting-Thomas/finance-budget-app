@@ -36,6 +36,8 @@ btnLogin.addEventListener("click", function (e) {
 
     userLogin.value = "";
     pinLogin.value = "";
+    userLogin.classList.remove("error");
+    pinLogin.classList.remove("error");
     btnLogout.classList.remove("hidden");
     init();
   } else {
