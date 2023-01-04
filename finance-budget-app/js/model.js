@@ -3,8 +3,6 @@ import {
   btnLogout,
   userLogin,
   pinLogin,
-  inputLogin,
-  fieldLogin,
   messageLogin,
   userDisplay,
   logoutText,
