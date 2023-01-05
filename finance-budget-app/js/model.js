@@ -39,14 +39,6 @@ btnLogin.addEventListener("click", function (e) {
     btnLogout.classList.remove("hidden");
     init();
   } else {
-    // // inputLogin.style.border = "1px solid red";
-    // // pinLogin.style.border =
-    // inputLogin.forEach(function (input) {
-    //   input.addEventListener("click", function () {
-    //     //e.preventDefault();
-    //     console.log(input);
-    //   });
-    // });
     userLogin.classList.add("error");
     pinLogin.classList.add("error");
 
