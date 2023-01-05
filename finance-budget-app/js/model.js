@@ -42,7 +42,7 @@ btnLogin.addEventListener("click", function (e) {
     userLogin.classList.add("error");
     pinLogin.classList.add("error");
 
-    messageLogin.textContent = "Wrong username or password.";
+    messageLogin.textContent = "Please enter the correct username or password.";
   }
 });
 
